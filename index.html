@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> <link rel="stylesheet" href="styles.css" />
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Educação Inclusiva e Sustentabilidade</title>
+<style>
+  /* Reset básico */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; padding: 0 10px;
+    background-color: #f4f4f4;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  header {
+    background-color: #006600;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav {
+    margin: 15px 0;
+    text-align: center;
+  }
+  nav button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  nav button:focus {
+    outline: 3px solid #333;
+  }
+  section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 6px;
+  }
+  h2 {
+    color: #006600;
+  }
+  ul {
+    margin-left: 20px;
+  }
+  .high-contrast {
+    background-color: black !important;
+    color: yellow !important;
+  }
+  .increase-font {
+    font-size: 1.2em;
+  }
+  /* Quiz */
+  .quiz-question {
+    margin-bottom: 10px;
+  }
+  .quiz-options label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .quiz-result {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #555;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    body {
+      padding: 0 5px;
+    }
+    nav button {
+      padding: 6px 8px;
+      font-size: 0.9em;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header role="banner">
+  <h1>Educação Inclusiva e Sustentabilidade</h1>
+  <p>Agir local e pensar global - Alinhado aos ODS 4 e 12</p>
+</header>
+
+<nav aria-label="Controles de acessibilidade">
+  <button id="btnContrast" aria-pressed="false">Contraste Alto</button>
+  <button id="btnFont" aria-pressed="false">Aumentar Fonte</button>
+</nav>
+
+<main>
+
+  <section id="apresentacao" tabindex="0" aria-label="Apresentação do projeto">
+    <h2>Sobre o Projeto</h2>
+    <p>Este projeto tem como objetivo promover uma educação inclusiva e de qualidade, 
+      além de conscientizar sobre o consumo e produção responsáveis, alinhando-se aos 
+      Objetivos de Desenvolvimento Sustentável da ONU (ODS 4 e 12).</p>
+    </section>
+
+    <section id="educacao-inclusiva" tabindex="0" aria-label="Educação Inclusiva">
+      <h2>Educação Inclusiva (ODS 4)</h2>
+      <p><strong>O que é educação inclusiva?</strong> Educação inclusiva é garantir que todas as pessoas, 
+        independentemente de suas condições, tenham acesso a uma educação de qualidade, em ambientes acessíveis e acolhedores.</p>
+      <p><strong>Desafios enfrentados por pessoas com deficiência:</strong></p>
+      <ul>
+        <li>Falta de acessibilidade nas escolas</li>
+        <li>Ausência de tecnologias assistivas</li>
+        <li>Preconceito e discriminação</li>
+      </ul>
+      <p><strong>Tecnologias Assistivas:</strong> São recursos que ajudam pessoas com deficiência a aprender e se comunicar, como leitores de tela, legendas, intérpretes de Libras, entre outros.</p>
+      <p><strong>O vídeo abaixo traz uma breve explicação sobre o assunto (exemplo):</strong></p>
+      
+      <!-- Aqui o iframe do YouTube diretamente -->
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/BVc8Nusj0jI?si=P8ypMjr_nlm9NJzO" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      
+    </section>
+    
+
+  <section id="consumo-responsavel" tabindex="0" aria-label="Consumo e Produção Responsáveis">
+    <h2>Consumo e Produção Responsáveis (ODS 12)</h2>
+    <p><strong>O que é consumo responsável?</strong> Consumo responsável significa fazer escolhas conscientes para diminuir o impacto ambiental e social, evitando desperdícios e promovendo sustentabilidade.</p>
+    <p><strong>Dicas para reduzir desperdício:</strong></p>
+    <ul>
+      <li>Compre apenas o necessário</li>
+      <li>Reutilize e recicle materiais</li>
+      <li>Evite produtos descartáveis</li>
+      <li>Economize água e energia</li>
+    </ul>
+    <p><strong>Gestão de resíduos:</strong> Separe o lixo corretamente e destine os resíduos para reciclagem ou descarte adequado.</p>
+    <img src="img/gráfico.png" 
+    alt="Infográfico do ciclo de vida dos produtos" 
+    style="max-width: 100%; height: auto; border-radius: 6px;" />
+  </section>
+
+ 
+  <section id="impacto-ambiental" tabindex="0" aria-label="Impacto Ambiental do Consumo">
+    <h2>Impacto Ambiental do Consumo</h2>
+    <p>Nossas escolhas diárias afetam o planeta. Entenda os impactos de alguns hábitos comuns:</p>
+    <ul>
+      <li><strong>Uso excessivo de plástico:</strong> Leva centenas de anos para se decompor e polui oceanos.</li>
+      <li><strong>Desperdício de alimentos:</strong> Estima-se que 30% da comida produzida no mundo é desperdiçada.</li>
+      <li><strong>Fast fashion:</strong> A indústria da moda é responsável por 10% das emissões globais de CO<sub>2</sub>.</li>
+    </ul>
+    <p>Repensar nossos hábitos é essencial para garantir um futuro sustentável.</p>
+  </section>
+
+  <section id="acoes-pessoais" tabindex="0" aria-label="O que você pode fazer">
+    <h2>O Que Você Pode Fazer</h2>
+    <p>Pequenas ações fazem grande diferença! Aqui estão algumas atitudes que você pode tomar:</p>
+    <ul>
+      <li>Compartilhe conhecimento sobre educação inclusiva com colegas e familiares.</li>
+      <li>Participe de eventos e campanhas que defendam os direitos das pessoas com deficiência.</li>
+      <li>Reduza, reutilize e recicle no seu dia a dia.</li>
+      <li>Escolha produtos de empresas comprometidas com a sustentabilidade.</li>
+      <li>Incentive sua escola ou empresa a adotar práticas mais acessíveis e ecológicas.</li>
+    </ul>
+  </section>
+
+
+  <section id="curiosidades" tabindex="0" aria-label="Curiosidades sobre os ODS">
+    <h2>Você Sabia?</h2>
+    <ul>
+      <li>Mais de 90% das pessoas com deficiência no mundo não têm acesso à educação adequada.</li>
+      <li>A reciclagem de uma tonelada de papel economiza 20 mil litros de água.</li>
+      <li>As metas do ODS 4 incluem garantir acesso igualitário à educação técnica e superior até 2030.</li>
+    </ul>
+  </section>
+  
+
+  <section id="quiz" tabindex="0" aria-label="Quiz interativo sobre educação inclusiva e sustentabilidade">
+    <h2>Quiz Interativo</h2>
+    <form id="quizForm">
+      <div class="quiz-question">
+        <p>1. O que é educação inclusiva?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q1" value="a" /> Educação para pessoas sem deficiência</label>
+          <label><input type="radio" name="q1" value="b" /> Educação que atende a todas as pessoas, independentemente das suas condições</label>
+          <label><input type="radio" name="q1" value="c" /> Educação só para crianças</label>
+        </div>
+      </div>
+      <div class="quiz-question">
+        <p>2. Cite uma tecnologia assistiva.</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q2" value="a" /> Leitor de tela</label>
+          <label><input type="radio" name="q2" value="b" /> Telefone celular</label>
+          <label><input type="radio" name="q2" value="c" /> Televisão</label>
+        </div>
+      </div>
+      <div class="quiz-question">
+        <p>3. Por que é importante reduzir o desperdício?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q3" value="a" /> Para economizar recursos naturais e proteger o meio ambiente</label>
+          <label><input type="radio" name="q3" value="b" /> Para gastar mais dinheiro</label>
+          <label><input type="radio" name="q3" value="c" /> Para comprar mais produtos</label>
+        </div>
+      </div>
+      <div class="quiz-question">
+        <p>4. Como devemos separar o lixo?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q4" value="a" /> Misturando tudo</label>
+          <label><input type="radio" name="q4" value="b" /> Separando em recicláveis e orgânicos</label>
+          <label><input type="radio" name="q4" value="c" /> Jogando tudo no lixo comum</label>
+        </div>
+      </div>
+      <button type="submit">Enviar Respostas</button>
+    </form>
+    <div id="quizResult" class="quiz-result" aria-live="polite"></div>
+  </section>
+
+  <section id="feedback" tabindex="0" aria-label="Formulário de feedback">
+    <h2>Deixe seu Feedback</h2>
+    <form id="feedbackForm">
+      <label for="name">Nome (opcional):</label><br />
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="comments">Comentários ou sugestões:</label><br />
+      <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br /><br />
+      <button type="submit">Enviar Feedback</button>
+    </form>
+    <div id="feedbackMessage" aria-live="polite" style="margin-top:10px;"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Projeto de Extensão 2025 - Engenharia de Software - Alinhado aos ODS 4 e 12</p>
+</footer>
+
+<script>
+  // Acessibilidade: Contraste alto toggle
+  const btnContrast = document.getElementById('btnContrast');
+  btnContrast.addEventListener('click', () => {
+    document.body.classList.toggle('high-contrast');
+    const pressed = btnContrast.getAttribute('aria-pressed') === 'true';
+    btnContrast.setAttribute('aria-pressed', String(!pressed));
+  });
+
+  // Acessibilidade: Aumentar fonte toggle
+  const btnFont = document.getElementById('btnFont');
+  btnFont.addEventListener('click', () => {
+    document.body.classList.toggle('increase-font');
+    const pressed = btnFont.getAttribute('aria-pressed') === 'true';
+    btnFont.setAttribute('aria-pressed', String(!pressed));
+  });
+
+  // Quiz
+  const quizForm = document.getElementById('quizForm');
+  const quizResult = document.getElementById('quizResult');
+
+  quizForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let score = 0;
+    const answers = {
+      q1: 'b',
+      q2: 'a',
+      q3: 'a',
+      q4: 'b'
+    };
+    const formData = new FormData(quizForm);
+    for (const [key, value] of formData.entries()) {
+      if (answers[key] === value) score++;
+    }
+    quizResult.textContent = `Você acertou ${score} de 4 perguntas.`;
+  });
+
+  // Feedback
+  const feedbackForm = document.getElementById('feedbackForm');
+  const feedbackMessage = document.getElementById('feedbackMessage');
+
+  feedbackForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // Aqui só simulamos o envio
+    feedbackMessage.textContent = 'Obrigado pelo seu feedback!';
+    feedbackForm.reset();
+  });
+</script>
+
+</body>
+</html>

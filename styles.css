@@ -1,0 +1,117 @@
+/* styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #133258;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #006600, #009900);
+  color: #0f0f41;
+  text-align: center;
+  padding: 30px 15px;
+  border-radius: 0 0 10px 10px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav button {
+  background-color: #006600;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 0 6px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #004d00;
+}
+
+/* Seções */
+section {
+  background-color: #482bbf;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #006600;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+iframe, img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Quiz */
+.quiz-question {
+  margin-bottom: 15px;
+}
+
+.quiz-options label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.quiz-result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Acessibilidade */
+.high-contrast {
+  background-color: black !important;
+  color: yellow !important;
+}
+
+.increase-font {
+  font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+}
+
